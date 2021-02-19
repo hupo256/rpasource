@@ -1,0 +1,17 @@
+{
+	"responseMessage": {
+		"captureRepos": [{
+			"captureRepoId": "crp-29b6f6ebny80",
+			"captureRepoName": "WWEE",
+			"defaultFlag": false,
+			"sourceDataUnitId": "sdu-296qz93nbqww"
+		}],
+		"captureRules": [{
+			"captureRepoId": "crp-29b6f6ebny8023",
+			"captureRuleId": "cru-29bdcpm4tce8",
+			"webUriPattern": "*.baidu.com/*"
+		}]
+	},
+	"statusCode": 200,
+	"systemMessage": null
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="https://lab-oss-dev02.oss-cn-shanghai.aliyuncs.com/dr/portal/images/ico.png"
+    type="image/x-icon" />
+  <title>数据波罗</title>
+  <script src="<%= xdb %>"></script>
+  <script>
+    // 连接indexedDB数据库
+    var tableName = 'cacheTable'
+    window.db = window.xdb.loadDB({
+      name: 'cacheDB',
+      onUpdate(e) {
+        console.log('update', e)
+        db.createTable(tableName, { keyPath: 'path' })
+      },
+      onSuccess(e) {
+      },
+    })
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
