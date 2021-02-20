@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Select } from 'antd'
-import { getGeneralParameter } from '@src/gobbler/api'
-import { request } from '@meizhilab/generalui'
+import request from '@src/service'
 
 const { Option } = Select
 export default function typeIdSelect(props) {
